@@ -91,7 +91,7 @@ export default {
       Audios.setPath(NAMES.takeABreak).play();
     },
     timeString(time) {
-      return `${("0" + Math.floor(time / 60)).slice(-2)}:${("0" + time).slice(
+      return `${("0" + Math.floor(time / 60)).slice(-2)}:${("0" + (time % 60)).slice(
         -2
       )}`;
     }
